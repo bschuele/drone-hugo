@@ -19,7 +19,7 @@ LABEL maintainer="Drone.IO Community <drone-dev@googlegroups.com>" \
 RUN apk --no-cache add git libc6-compat libstdc++
 
 ENV PLUGIN_HUGO_ARCH=64bit
-ENV PLUGIN_HUGO_SHIPPED_VERSION=0.140.2
+ENV PLUGIN_HUGO_SHIPPED_VERSION=0.147.2
 
 COPY --from=build /tmp/hugo /bin/hugo
 COPY --from=build /tmp/hugo-extended /bin/hugo-extended
