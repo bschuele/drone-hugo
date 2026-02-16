@@ -1,4 +1,4 @@
-FROM --platform=amd64 golang:1.23-alpine AS build
+FROM --platform=amd64 golang:1.25-alpine AS build
 
 RUN apk add --no-cache git build-base && \
   git clone --branch v0.152.2  https://github.com/gohugoio/hugo.git && \
